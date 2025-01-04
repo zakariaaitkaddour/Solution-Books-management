@@ -1,0 +1,17 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.MainPage"
+             IconImageSource="appicon.svg"
+             Title="Login">
+   
+    <StackLayout Padding="20" Margin="30" Spacing="15" VerticalOptions="Center" Opacity="0.8" WidthRequest="700" HeightRequest="500">
+        <Entry x:Name="UsernameEntry" Placeholder="Username"  HorizontalOptions="Center"  WidthRequest="500"/>
+        <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" HorizontalOptions="Center"  WidthRequest="500"/>
+        <HorizontalStackLayout Spacing="15" HorizontalOptions="Center">
+            <Button Text="Login" Clicked="OnLoginClicked" WidthRequest="200"  />
+            <Button Text="Sign Up" Clicked="OnSignUpClicked" WidthRequest="200" />
+        </HorizontalStackLayout>
+        <Label x:Name="MessageLabel" TextColor="Red" HorizontalOptions="Center" />
+
+    </StackLayout>
+</ContentPage>
